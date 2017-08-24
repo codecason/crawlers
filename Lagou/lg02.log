@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta property="qc:admins" content="23635710066417756375" />
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<meta charset="UTF-8">
+
+<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
+
+<meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+
+<title>找工作-互联网招聘求职网-拉勾网</title>
+
+<link rel="Shortcut Icon" href="//static.lagou.com/passport/static/common/static/favicon_faed927.ico">
+
+
+    <!-- header/global_domain FE_base.. -->
+    
+<script type="text/javascript">
+(function() {
+    var protocol = window.location.protocol;
+    var host = window.location.host;
+    var baseUrl = protocol + '//' + host;
+
+    window.GLOBAL_DOMAIN = window.GLOBAL_DOMAIN || {
+        ctx: protocol + '//www.lagou.com',
+        rctx: protocol + '//hr.lagou.com',
+        crctx: protocol + '//hr.lagou.com/company',
+        pctx: protocol + '//passport.lagou.com',
+        actx: protocol + '//account.lagou.com',
+        paictx: protocol + '//pai.lagou.com',
+        sctx: protocol + '//suggest.lagou.com',
+        zctx: protocol + '//yanzhi.lagou.com',
+        proctx: 'https://pro.lagou.com',
+        lgsctx: protocol + '//static.lagou.com',
+        FE_frontLogin: baseUrl + '//www.lagou.com/frontLogin.do',
+        FE_frontLogout: baseUrl + '//www.lagou.com/frontLogout.do',
+        FE_frontRegister: baseUrl + '//www.lagou.com/frontRegister.do'
+    };
+
+    window.GLOBAL_CDN_DOMAIN = 'static.lagou.com';
+})();
+</script>
+
+    <!-- 页面样式 -->    <!-- 动态token，防御伪造请求，重复提交 -->
+    <script type="text/javascript">
+    window.X_Anti_Forge_Token = 'cf2efb2f-faf0-4ef8-8a0d-ba665a5b38ef';
+    window.X_Anti_Forge_Code = '68267415';
+</script>
+
+    <!-- H5	 -->
+    <!--[if lt IE 9]>
+  	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_c425276.css" />
+</head>
+
+<body>
+    <input type="hidden" value = "" id = "isVisiable_request_form_verifyCode" />
+    <!-- 页面主体START -->
+    <header class="sso_header">
+        <a href="http://www.lagou.com" class="logo ">
+        </a>
+    </header>
+    <section class="content_box cleafix">
+        <div class="left_area fl">
+            <div class="form_head">
+                <ul class="form_head clearfix">
+                    <li class="active" data-lg-tj-id="1Us0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        密码登录
+                    </li>
+                    <li data-lg-tj-id="1Ut0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        验证码登录
+                    </li>
+                </ul>
+                <span class="tab_active"></span>
+            </div>
+            <div class="form_body" data-view="passwordLogin">
+                <form class="active" action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号/邮箱" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="password" data-controltype="Password">
+                        <input type="password" class="input input_white" id="" name="" placeholder="请输入密码" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item clearfix">
+                        <a rel="nofollow" href="https://passport.lagou.com/accountPwd/toReset.html" class="forgot_pwd">忘记密码？</a>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1j90" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+            <div class="form_body" data-view="codeLogin">
+                <form action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <!--
+	@require "pc/modules/country-code/main.js"
+	@require "pc/modules/country-code/main.less"
+-->
+<span class="area_code"></span>
+<div class="area_code_list">
+    <dl class="code_list_main"></dl>
+    <p class="tips">如果没有找到您的所在归属地，请拨打客服电话4006282835解决。</p>
+</div>
+
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item" data-propertyname="phoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white first_child" id="" name="" placeholder="请输入验证码" data-required="required" autocomplete="off">
+                            <input type="button" class="btn btn_active last_child" value="获取验证码" data-required="required" data-lg-tj-id="1UG0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        </div>
+                    </div>
+                    <div class="input_item verify_tips" data-propertyname="autoPhoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <p class="verify_tips_main">收不到短信？请使用
+                            <input type="button" class="auto_phone" value="语音验证">
+                        </p>
+                        <p class="verify_tips_count_down">语音发送成功</p>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1Uu0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="divider fl"></div>
+        <div class="right_area fl">
+            <h5>还没有帐号:</h5>
+            <a href="../register/register.html" class="register_now" data-lg-tj-id="1ja0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">立即注册</a>
+            <h5>使用以下帐号直接登录:</h5>
+            <ul class="vender_login clearfix">
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_sinaWeiboProvider.html" title="使用新浪微博帐号登录" class="vender_icon icon_sina" target="_blank" data-lg-tj-id="1jb0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_weixinProvider.html" class="vender_icon icon_wechat" title="使用微信帐号登录" target="_blank" data-lg-tj-id="1jd0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_qqProvider.html" title="使用腾讯QQ帐号登录" class="vender_icon icon_tencent" target="_blank" data-lg-tj-id="1jc0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_baiduProvider.html" title="使用百度帐号登录" class="vender_icon icon_baidu" target="_blank" data-lg-tj-id="2ih0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 页面主体END -->    <!-- jquery lib -->    <!--拉勾UI框架 -->    <!-- analytics js file -->    <!-- plat analytics js file -->    <input type="hidden" id="serverTime" value="1503579091336" />
+
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/vendor_c7a7c93.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_f95e644.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/static_73e9807.js"></script>
+<script type="text/javascript">
+    //login page
+    require(['pc/page/login/main']);
+    
+
+    require(['pc/modules/event/happy-3rd-birthday/main']);
+</script>
+<script src="https://passport.lagou.com/utrack/track.js?version=1.0.0.10&_t=1503579091" type="text/javascript"></script>
+<script type="text/javascript" src="https://passport.lagou.com/upload/oss.js"></script></body>
+
+</html>
+----------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta property="qc:admins" content="23635710066417756375" />
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<meta charset="UTF-8">
+
+<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
+
+<meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+
+<title>找工作-互联网招聘求职网-拉勾网</title>
+
+<link rel="Shortcut Icon" href="//static.lagou.com/passport/static/common/static/favicon_faed927.ico">
+
+
+    <!-- header/global_domain FE_base.. -->
+    
+<script type="text/javascript">
+(function() {
+    var protocol = window.location.protocol;
+    var host = window.location.host;
+    var baseUrl = protocol + '//' + host;
+
+    window.GLOBAL_DOMAIN = window.GLOBAL_DOMAIN || {
+        ctx: protocol + '//www.lagou.com',
+        rctx: protocol + '//hr.lagou.com',
+        crctx: protocol + '//hr.lagou.com/company',
+        pctx: protocol + '//passport.lagou.com',
+        actx: protocol + '//account.lagou.com',
+        paictx: protocol + '//pai.lagou.com',
+        sctx: protocol + '//suggest.lagou.com',
+        zctx: protocol + '//yanzhi.lagou.com',
+        proctx: 'https://pro.lagou.com',
+        lgsctx: protocol + '//static.lagou.com',
+        FE_frontLogin: baseUrl + '//www.lagou.com/frontLogin.do',
+        FE_frontLogout: baseUrl + '//www.lagou.com/frontLogout.do',
+        FE_frontRegister: baseUrl + '//www.lagou.com/frontRegister.do'
+    };
+
+    window.GLOBAL_CDN_DOMAIN = 'static.lagou.com';
+})();
+</script>
+
+    <!-- 页面样式 -->    <!-- 动态token，防御伪造请求，重复提交 -->
+    <script type="text/javascript">
+    window.X_Anti_Forge_Token = '8550d4b5-8c40-40b2-bd7d-5003ec2451b3';
+    window.X_Anti_Forge_Code = '99277237';
+</script>
+
+    <!-- H5	 -->
+    <!--[if lt IE 9]>
+  	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_c425276.css" />
+</head>
+
+<body>
+    <input type="hidden" value = "" id = "isVisiable_request_form_verifyCode" />
+    <!-- 页面主体START -->
+    <header class="sso_header">
+        <a href="http://www.lagou.com" class="logo ">
+        </a>
+    </header>
+    <section class="content_box cleafix">
+        <div class="left_area fl">
+            <div class="form_head">
+                <ul class="form_head clearfix">
+                    <li class="active" data-lg-tj-id="1Us0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        密码登录
+                    </li>
+                    <li data-lg-tj-id="1Ut0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        验证码登录
+                    </li>
+                </ul>
+                <span class="tab_active"></span>
+            </div>
+            <div class="form_body" data-view="passwordLogin">
+                <form class="active" action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号/邮箱" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="password" data-controltype="Password">
+                        <input type="password" class="input input_white" id="" name="" placeholder="请输入密码" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item clearfix">
+                        <a rel="nofollow" href="https://passport.lagou.com/accountPwd/toReset.html" class="forgot_pwd">忘记密码？</a>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1j90" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+            <div class="form_body" data-view="codeLogin">
+                <form action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <!--
+	@require "pc/modules/country-code/main.js"
+	@require "pc/modules/country-code/main.less"
+-->
+<span class="area_code"></span>
+<div class="area_code_list">
+    <dl class="code_list_main"></dl>
+    <p class="tips">如果没有找到您的所在归属地，请拨打客服电话4006282835解决。</p>
+</div>
+
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item" data-propertyname="phoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white first_child" id="" name="" placeholder="请输入验证码" data-required="required" autocomplete="off">
+                            <input type="button" class="btn btn_active last_child" value="获取验证码" data-required="required" data-lg-tj-id="1UG0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        </div>
+                    </div>
+                    <div class="input_item verify_tips" data-propertyname="autoPhoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <p class="verify_tips_main">收不到短信？请使用
+                            <input type="button" class="auto_phone" value="语音验证">
+                        </p>
+                        <p class="verify_tips_count_down">语音发送成功</p>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1Uu0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="divider fl"></div>
+        <div class="right_area fl">
+            <h5>还没有帐号:</h5>
+            <a href="../register/register.html" class="register_now" data-lg-tj-id="1ja0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">立即注册</a>
+            <h5>使用以下帐号直接登录:</h5>
+            <ul class="vender_login clearfix">
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_sinaWeiboProvider.html" title="使用新浪微博帐号登录" class="vender_icon icon_sina" target="_blank" data-lg-tj-id="1jb0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_weixinProvider.html" class="vender_icon icon_wechat" title="使用微信帐号登录" target="_blank" data-lg-tj-id="1jd0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_qqProvider.html" title="使用腾讯QQ帐号登录" class="vender_icon icon_tencent" target="_blank" data-lg-tj-id="1jc0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_baiduProvider.html" title="使用百度帐号登录" class="vender_icon icon_baidu" target="_blank" data-lg-tj-id="2ih0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 页面主体END -->    <!-- jquery lib -->    <!--拉勾UI框架 -->    <!-- analytics js file -->    <!-- plat analytics js file -->    <input type="hidden" id="serverTime" value="1503579092028" />
+
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/vendor_c7a7c93.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_f95e644.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/static_73e9807.js"></script>
+<script type="text/javascript">
+    //login page
+    require(['pc/page/login/main']);
+    
+
+    require(['pc/modules/event/happy-3rd-birthday/main']);
+</script>
+<script src="https://passport.lagou.com/utrack/track.js?version=1.0.0.10&_t=1503579092" type="text/javascript"></script>
+<script type="text/javascript" src="https://passport.lagou.com/upload/oss.js"></script></body>
+
+</html>
+----------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta property="qc:admins" content="23635710066417756375" />
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<meta charset="UTF-8">
+
+<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
+
+<meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+
+<title>找工作-互联网招聘求职网-拉勾网</title>
+
+<link rel="Shortcut Icon" href="//static.lagou.com/passport/static/common/static/favicon_faed927.ico">
+
+
+    <!-- header/global_domain FE_base.. -->
+    
+<script type="text/javascript">
+(function() {
+    var protocol = window.location.protocol;
+    var host = window.location.host;
+    var baseUrl = protocol + '//' + host;
+
+    window.GLOBAL_DOMAIN = window.GLOBAL_DOMAIN || {
+        ctx: protocol + '//www.lagou.com',
+        rctx: protocol + '//hr.lagou.com',
+        crctx: protocol + '//hr.lagou.com/company',
+        pctx: protocol + '//passport.lagou.com',
+        actx: protocol + '//account.lagou.com',
+        paictx: protocol + '//pai.lagou.com',
+        sctx: protocol + '//suggest.lagou.com',
+        zctx: protocol + '//yanzhi.lagou.com',
+        proctx: 'https://pro.lagou.com',
+        lgsctx: protocol + '//static.lagou.com',
+        FE_frontLogin: baseUrl + '//www.lagou.com/frontLogin.do',
+        FE_frontLogout: baseUrl + '//www.lagou.com/frontLogout.do',
+        FE_frontRegister: baseUrl + '//www.lagou.com/frontRegister.do'
+    };
+
+    window.GLOBAL_CDN_DOMAIN = 'static.lagou.com';
+})();
+</script>
+
+    <!-- 页面样式 -->    <!-- 动态token，防御伪造请求，重复提交 -->
+    <script type="text/javascript">
+    window.X_Anti_Forge_Token = 'ef390439-299a-4d92-a9fd-f3d93c484e99';
+    window.X_Anti_Forge_Code = '20782984';
+</script>
+
+    <!-- H5	 -->
+    <!--[if lt IE 9]>
+  	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_c425276.css" />
+</head>
+
+<body>
+    <input type="hidden" value = "" id = "isVisiable_request_form_verifyCode" />
+    <!-- 页面主体START -->
+    <header class="sso_header">
+        <a href="http://www.lagou.com" class="logo ">
+        </a>
+    </header>
+    <section class="content_box cleafix">
+        <div class="left_area fl">
+            <div class="form_head">
+                <ul class="form_head clearfix">
+                    <li class="active" data-lg-tj-id="1Us0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        密码登录
+                    </li>
+                    <li data-lg-tj-id="1Ut0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        验证码登录
+                    </li>
+                </ul>
+                <span class="tab_active"></span>
+            </div>
+            <div class="form_body" data-view="passwordLogin">
+                <form class="active" action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号/邮箱" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="password" data-controltype="Password">
+                        <input type="password" class="input input_white" id="" name="" placeholder="请输入密码" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item clearfix">
+                        <a rel="nofollow" href="https://passport.lagou.com/accountPwd/toReset.html" class="forgot_pwd">忘记密码？</a>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1j90" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+            <div class="form_body" data-view="codeLogin">
+                <form action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <!--
+	@require "pc/modules/country-code/main.js"
+	@require "pc/modules/country-code/main.less"
+-->
+<span class="area_code"></span>
+<div class="area_code_list">
+    <dl class="code_list_main"></dl>
+    <p class="tips">如果没有找到您的所在归属地，请拨打客服电话4006282835解决。</p>
+</div>
+
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item" data-propertyname="phoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white first_child" id="" name="" placeholder="请输入验证码" data-required="required" autocomplete="off">
+                            <input type="button" class="btn btn_active last_child" value="获取验证码" data-required="required" data-lg-tj-id="1UG0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        </div>
+                    </div>
+                    <div class="input_item verify_tips" data-propertyname="autoPhoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <p class="verify_tips_main">收不到短信？请使用
+                            <input type="button" class="auto_phone" value="语音验证">
+                        </p>
+                        <p class="verify_tips_count_down">语音发送成功</p>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1Uu0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="divider fl"></div>
+        <div class="right_area fl">
+            <h5>还没有帐号:</h5>
+            <a href="../register/register.html" class="register_now" data-lg-tj-id="1ja0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">立即注册</a>
+            <h5>使用以下帐号直接登录:</h5>
+            <ul class="vender_login clearfix">
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_sinaWeiboProvider.html" title="使用新浪微博帐号登录" class="vender_icon icon_sina" target="_blank" data-lg-tj-id="1jb0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_weixinProvider.html" class="vender_icon icon_wechat" title="使用微信帐号登录" target="_blank" data-lg-tj-id="1jd0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_qqProvider.html" title="使用腾讯QQ帐号登录" class="vender_icon icon_tencent" target="_blank" data-lg-tj-id="1jc0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_baiduProvider.html" title="使用百度帐号登录" class="vender_icon icon_baidu" target="_blank" data-lg-tj-id="2ih0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 页面主体END -->    <!-- jquery lib -->    <!--拉勾UI框架 -->    <!-- analytics js file -->    <!-- plat analytics js file -->    <input type="hidden" id="serverTime" value="1503579092679" />
+
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/vendor_c7a7c93.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_f95e644.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/static_73e9807.js"></script>
+<script type="text/javascript">
+    //login page
+    require(['pc/page/login/main']);
+    
+
+    require(['pc/modules/event/happy-3rd-birthday/main']);
+</script>
+<script src="https://passport.lagou.com/utrack/track.js?version=1.0.0.10&_t=1503579092" type="text/javascript"></script>
+<script type="text/javascript" src="https://passport.lagou.com/upload/oss.js"></script></body>
+
+</html>
+----------------------------------------------------------------------------------------------------
+<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579093"></script><body><input type="hidden" id="KEY" value="t2yUAPHlkS09dpX0m8DMUnCFRptIvfoXky90tZ6Y5txl"/><script type="text/javascript">nzFrojYf();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+----------------------------------------------------------------------------------------------------
+<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579094"></script><body><input type="hidden" id="KEY" value="t2yUAPHlkS09dpX0m8DMUnCFRptIvfoXky90tZ6Y5txl"/><script type="text/javascript">nzFrojYf();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+----------------------------------------------------------------------------------------------------
+<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579107"></script><body><input type="hidden" id="KEY" value="t2yUAPHlkS09dpX0m8DMUnCFRptIvfoXky90tZ6Y5txl"/><script type="text/javascript">nzFrojYf();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+----------------------------------------------------------------------------------------------------
+<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579108"></script><body><input type="hidden" id="KEY" value="t2yUAPHlkS09dpX0m8DMUnCFRptIvfoXky90tZ6Y5txl"/><script type="text/javascript">nzFrojYf();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+----------------------------------------------------------------------------------------------------
+<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579109"></script><body><input type="hidden" id="KEY" value="t2yUAPHlkS09dpX0m8DMUnCFRptIvfoXky90tZ6Y5txl"/><script type="text/javascript">nzFrojYf();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+----------------------------------------------------------------------------------------------------
+<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579110"></script><body><input type="hidden" id="KEY" value="t2yUAPHlkS09dpX0m8DMUnCFRptIvfoXky90tZ6Y5txl"/><script type="text/javascript">nzFrojYf();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+----------------------------------------------------------------------------------------------------
+'<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta property="qc:admins" content="23635710066417756375" />
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<meta charset="UTF-8">
+
+<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
+
+<meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+
+<title>找工作-互联网招聘求职网-拉勾网</title>
+
+<link rel="Shortcut Icon" href="//static.lagou.com/passport/static/common/static/favicon_faed927.ico">
+
+
+    <!-- header/global_domain FE_base.. -->
+    
+<script type="text/javascript">
+(function() {
+    var protocol = window.location.protocol;
+    var host = window.location.host;
+    var baseUrl = protocol + '//' + host;
+
+    window.GLOBAL_DOMAIN = window.GLOBAL_DOMAIN || {
+        ctx: protocol + '//www.lagou.com',
+        rctx: protocol + '//hr.lagou.com',
+        crctx: protocol + '//hr.lagou.com/company',
+        pctx: protocol + '//passport.lagou.com',
+        actx: protocol + '//account.lagou.com',
+        paictx: protocol + '//pai.lagou.com',
+        sctx: protocol + '//suggest.lagou.com',
+        zctx: protocol + '//yanzhi.lagou.com',
+        proctx: 'https://pro.lagou.com',
+        lgsctx: protocol + '//static.lagou.com',
+        FE_frontLogin: baseUrl + '//www.lagou.com/frontLogin.do',
+        FE_frontLogout: baseUrl + '//www.lagou.com/frontLogout.do',
+        FE_frontRegister: baseUrl + '//www.lagou.com/frontRegister.do'
+    };
+
+    window.GLOBAL_CDN_DOMAIN = 'static.lagou.com';
+})();
+</script>
+
+    <!-- 页面样式 -->    <!-- 动态token，防御伪造请求，重复提交 -->
+    <script type="text/javascript">
+    window.X_Anti_Forge_Token = 'aefec358-3af2-4c5a-9a25-17c20341235c';
+    window.X_Anti_Forge_Code = '66195429';
+</script>
+
+    <!-- H5	 -->
+    <!--[if lt IE 9]>
+  	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_c425276.css" />
+</head>
+
+<body>
+    <input type="hidden" value = "" id = "isVisiable_request_form_verifyCode" />
+    <!-- 页面主体START -->
+    <header class="sso_header">
+        <a href="http://www.lagou.com" class="logo ">
+        </a>
+    </header>
+    <section class="content_box cleafix">
+        <div class="left_area fl">
+            <div class="form_head">
+                <ul class="form_head clearfix">
+                    <li class="active" data-lg-tj-id="1Us0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        密码登录
+                    </li>
+                    <li data-lg-tj-id="1Ut0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        验证码登录
+                    </li>
+                </ul>
+                <span class="tab_active"></span>
+            </div>
+            <div class="form_body" data-view="passwordLogin">
+                <form class="active" action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号/邮箱" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="password" data-controltype="Password">
+                        <input type="password" class="input input_white" id="" name="" placeholder="请输入密码" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item clearfix">
+                        <a rel="nofollow" href="https://passport.lagou.com/accountPwd/toReset.html" class="forgot_pwd">忘记密码？</a>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1j90" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+            <div class="form_body" data-view="codeLogin">
+                <form action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <!--
+	@require "pc/modules/country-code/main.js"
+	@require "pc/modules/country-code/main.less"
+-->
+<span class="area_code"></span>
+<div class="area_code_list">
+    <dl class="code_list_main"></dl>
+    <p class="tips">如果没有找到您的所在归属地，请拨打客服电话4006282835解决。</p>
+</div>
+
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item" data-propertyname="phoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white first_child" id="" name="" placeholder="请输入验证码" data-required="required" autocomplete="off">
+                            <input type="button" class="btn btn_active last_child" value="获取验证码" data-required="required" data-lg-tj-id="1UG0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        </div>
+                    </div>
+                    <div class="input_item verify_tips" data-propertyname="autoPhoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <p class="verify_tips_main">收不到短信？请使用
+                            <input type="button" class="auto_phone" value="语音验证">
+                        </p>
+                        <p class="verify_tips_count_down">语音发送成功</p>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1Uu0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="divider fl"></div>
+        <div class="right_area fl">
+            <h5>还没有帐号:</h5>
+            <a href="../register/register.html" class="register_now" data-lg-tj-id="1ja0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">立即注册</a>
+            <h5>使用以下帐号直接登录:</h5>
+            <ul class="vender_login clearfix">
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_sinaWeiboProvider.html" title="使用新浪微博帐号登录" class="vender_icon icon_sina" target="_blank" data-lg-tj-id="1jb0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_weixinProvider.html" class="vender_icon icon_wechat" title="使用微信帐号登录" target="_blank" data-lg-tj-id="1jd0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_qqProvider.html" title="使用腾讯QQ帐号登录" class="vender_icon icon_tencent" target="_blank" data-lg-tj-id="1jc0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_baiduProvider.html" title="使用百度帐号登录" class="vender_icon icon_baidu" target="_blank" data-lg-tj-id="2ih0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 页面主体END -->    <!-- jquery lib -->    <!--拉勾UI框架 -->    <!-- analytics js file -->    <!-- plat analytics js file -->    <input type="hidden" id="serverTime" value="1503579915371" />
+
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/vendor_c7a7c93.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_f95e644.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/static_73e9807.js"></script>
+<script type="text/javascript">
+    //login page
+    require(['pc/page/login/main']);
+    
+
+    require(['pc/modules/event/happy-3rd-birthday/main']);
+</script>
+<script src="https://passport.lagou.com/utrack/track.js?version=1.0.0.10&_t=1503579915" type="text/javascript"></script>
+<script type="text/javascript" src="https://passport.lagou.com/upload/oss.js"></script></body>
+
+</html>
+'----------------------------------------------------------------------------------------------------
+'<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta property="qc:admins" content="23635710066417756375" />
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<meta charset="UTF-8">
+
+<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
+
+<meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+
+<title>找工作-互联网招聘求职网-拉勾网</title>
+
+<link rel="Shortcut Icon" href="//static.lagou.com/passport/static/common/static/favicon_faed927.ico">
+
+
+    <!-- header/global_domain FE_base.. -->
+    
+<script type="text/javascript">
+(function() {
+    var protocol = window.location.protocol;
+    var host = window.location.host;
+    var baseUrl = protocol + '//' + host;
+
+    window.GLOBAL_DOMAIN = window.GLOBAL_DOMAIN || {
+        ctx: protocol + '//www.lagou.com',
+        rctx: protocol + '//hr.lagou.com',
+        crctx: protocol + '//hr.lagou.com/company',
+        pctx: protocol + '//passport.lagou.com',
+        actx: protocol + '//account.lagou.com',
+        paictx: protocol + '//pai.lagou.com',
+        sctx: protocol + '//suggest.lagou.com',
+        zctx: protocol + '//yanzhi.lagou.com',
+        proctx: 'https://pro.lagou.com',
+        lgsctx: protocol + '//static.lagou.com',
+        FE_frontLogin: baseUrl + '//www.lagou.com/frontLogin.do',
+        FE_frontLogout: baseUrl + '//www.lagou.com/frontLogout.do',
+        FE_frontRegister: baseUrl + '//www.lagou.com/frontRegister.do'
+    };
+
+    window.GLOBAL_CDN_DOMAIN = 'static.lagou.com';
+})();
+</script>
+
+    <!-- 页面样式 -->    <!-- 动态token，防御伪造请求，重复提交 -->
+    <script type="text/javascript">
+    window.X_Anti_Forge_Token = '6ec39a93-af9b-4535-820c-b00f747054da';
+    window.X_Anti_Forge_Code = '40418247';
+</script>
+
+    <!-- H5	 -->
+    <!--[if lt IE 9]>
+  	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_c425276.css" />
+</head>
+
+<body>
+    <input type="hidden" value = "" id = "isVisiable_request_form_verifyCode" />
+    <!-- 页面主体START -->
+    <header class="sso_header">
+        <a href="http://www.lagou.com" class="logo ">
+        </a>
+    </header>
+    <section class="content_box cleafix">
+        <div class="left_area fl">
+            <div class="form_head">
+                <ul class="form_head clearfix">
+                    <li class="active" data-lg-tj-id="1Us0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        密码登录
+                    </li>
+                    <li data-lg-tj-id="1Ut0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        验证码登录
+                    </li>
+                </ul>
+                <span class="tab_active"></span>
+            </div>
+            <div class="form_body" data-view="passwordLogin">
+                <form class="active" action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号/邮箱" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="password" data-controltype="Password">
+                        <input type="password" class="input input_white" id="" name="" placeholder="请输入密码" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item clearfix">
+                        <a rel="nofollow" href="https://passport.lagou.com/accountPwd/toReset.html" class="forgot_pwd">忘记密码？</a>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1j90" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+            <div class="form_body" data-view="codeLogin">
+                <form action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <!--
+	@require "pc/modules/country-code/main.js"
+	@require "pc/modules/country-code/main.less"
+-->
+<span class="area_code"></span>
+<div class="area_code_list">
+    <dl class="code_list_main"></dl>
+    <p class="tips">如果没有找到您的所在归属地，请拨打客服电话4006282835解决。</p>
+</div>
+
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item" data-propertyname="phoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white first_child" id="" name="" placeholder="请输入验证码" data-required="required" autocomplete="off">
+                            <input type="button" class="btn btn_active last_child" value="获取验证码" data-required="required" data-lg-tj-id="1UG0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        </div>
+                    </div>
+                    <div class="input_item verify_tips" data-propertyname="autoPhoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <p class="verify_tips_main">收不到短信？请使用
+                            <input type="button" class="auto_phone" value="语音验证">
+                        </p>
+                        <p class="verify_tips_count_down">语音发送成功</p>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1Uu0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="divider fl"></div>
+        <div class="right_area fl">
+            <h5>还没有帐号:</h5>
+            <a href="../register/register.html" class="register_now" data-lg-tj-id="1ja0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">立即注册</a>
+            <h5>使用以下帐号直接登录:</h5>
+            <ul class="vender_login clearfix">
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_sinaWeiboProvider.html" title="使用新浪微博帐号登录" class="vender_icon icon_sina" target="_blank" data-lg-tj-id="1jb0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_weixinProvider.html" class="vender_icon icon_wechat" title="使用微信帐号登录" target="_blank" data-lg-tj-id="1jd0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_qqProvider.html" title="使用腾讯QQ帐号登录" class="vender_icon icon_tencent" target="_blank" data-lg-tj-id="1jc0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_baiduProvider.html" title="使用百度帐号登录" class="vender_icon icon_baidu" target="_blank" data-lg-tj-id="2ih0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 页面主体END -->    <!-- jquery lib -->    <!--拉勾UI框架 -->    <!-- analytics js file -->    <!-- plat analytics js file -->    <input type="hidden" id="serverTime" value="1503579916358" />
+
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/vendor_c7a7c93.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_f95e644.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/static_73e9807.js"></script>
+<script type="text/javascript">
+    //login page
+    require(['pc/page/login/main']);
+    
+
+    require(['pc/modules/event/happy-3rd-birthday/main']);
+</script>
+<script src="https://passport.lagou.com/utrack/track.js?version=1.0.0.10&_t=1503579916" type="text/javascript"></script>
+<script type="text/javascript" src="https://passport.lagou.com/upload/oss.js"></script></body>
+
+</html>
+'----------------------------------------------------------------------------------------------------
+'<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta property="qc:admins" content="23635710066417756375" />
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<meta charset="UTF-8">
+
+<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
+
+<meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+
+<title>找工作-互联网招聘求职网-拉勾网</title>
+
+<link rel="Shortcut Icon" href="//static.lagou.com/passport/static/common/static/favicon_faed927.ico">
+
+
+    <!-- header/global_domain FE_base.. -->
+    
+<script type="text/javascript">
+(function() {
+    var protocol = window.location.protocol;
+    var host = window.location.host;
+    var baseUrl = protocol + '//' + host;
+
+    window.GLOBAL_DOMAIN = window.GLOBAL_DOMAIN || {
+        ctx: protocol + '//www.lagou.com',
+        rctx: protocol + '//hr.lagou.com',
+        crctx: protocol + '//hr.lagou.com/company',
+        pctx: protocol + '//passport.lagou.com',
+        actx: protocol + '//account.lagou.com',
+        paictx: protocol + '//pai.lagou.com',
+        sctx: protocol + '//suggest.lagou.com',
+        zctx: protocol + '//yanzhi.lagou.com',
+        proctx: 'https://pro.lagou.com',
+        lgsctx: protocol + '//static.lagou.com',
+        FE_frontLogin: baseUrl + '//www.lagou.com/frontLogin.do',
+        FE_frontLogout: baseUrl + '//www.lagou.com/frontLogout.do',
+        FE_frontRegister: baseUrl + '//www.lagou.com/frontRegister.do'
+    };
+
+    window.GLOBAL_CDN_DOMAIN = 'static.lagou.com';
+})();
+</script>
+
+    <!-- 页面样式 -->    <!-- 动态token，防御伪造请求，重复提交 -->
+    <script type="text/javascript">
+    window.X_Anti_Forge_Token = '062daead-79d6-4128-a2af-be3a868c4cf8';
+    window.X_Anti_Forge_Code = '45734583';
+</script>
+
+    <!-- H5	 -->
+    <!--[if lt IE 9]>
+  	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_c425276.css" />
+</head>
+
+<body>
+    <input type="hidden" value = "" id = "isVisiable_request_form_verifyCode" />
+    <!-- 页面主体START -->
+    <header class="sso_header">
+        <a href="http://www.lagou.com" class="logo ">
+        </a>
+    </header>
+    <section class="content_box cleafix">
+        <div class="left_area fl">
+            <div class="form_head">
+                <ul class="form_head clearfix">
+                    <li class="active" data-lg-tj-id="1Us0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        密码登录
+                    </li>
+                    <li data-lg-tj-id="1Ut0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        验证码登录
+                    </li>
+                </ul>
+                <span class="tab_active"></span>
+            </div>
+            <div class="form_body" data-view="passwordLogin">
+                <form class="active" action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号/邮箱" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="password" data-controltype="Password">
+                        <input type="password" class="input input_white" id="" name="" placeholder="请输入密码" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item clearfix">
+                        <a rel="nofollow" href="https://passport.lagou.com/accountPwd/toReset.html" class="forgot_pwd">忘记密码？</a>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1j90" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+            <div class="form_body" data-view="codeLogin">
+                <form action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <!--
+	@require "pc/modules/country-code/main.js"
+	@require "pc/modules/country-code/main.less"
+-->
+<span class="area_code"></span>
+<div class="area_code_list">
+    <dl class="code_list_main"></dl>
+    <p class="tips">如果没有找到您的所在归属地，请拨打客服电话4006282835解决。</p>
+</div>
+
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item" data-propertyname="phoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white first_child" id="" name="" placeholder="请输入验证码" data-required="required" autocomplete="off">
+                            <input type="button" class="btn btn_active last_child" value="获取验证码" data-required="required" data-lg-tj-id="1UG0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        </div>
+                    </div>
+                    <div class="input_item verify_tips" data-propertyname="autoPhoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <p class="verify_tips_main">收不到短信？请使用
+                            <input type="button" class="auto_phone" value="语音验证">
+                        </p>
+                        <p class="verify_tips_count_down">语音发送成功</p>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1Uu0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="divider fl"></div>
+        <div class="right_area fl">
+            <h5>还没有帐号:</h5>
+            <a href="../register/register.html" class="register_now" data-lg-tj-id="1ja0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">立即注册</a>
+            <h5>使用以下帐号直接登录:</h5>
+            <ul class="vender_login clearfix">
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_sinaWeiboProvider.html" title="使用新浪微博帐号登录" class="vender_icon icon_sina" target="_blank" data-lg-tj-id="1jb0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_weixinProvider.html" class="vender_icon icon_wechat" title="使用微信帐号登录" target="_blank" data-lg-tj-id="1jd0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_qqProvider.html" title="使用腾讯QQ帐号登录" class="vender_icon icon_tencent" target="_blank" data-lg-tj-id="1jc0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_baiduProvider.html" title="使用百度帐号登录" class="vender_icon icon_baidu" target="_blank" data-lg-tj-id="2ih0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 页面主体END -->    <!-- jquery lib -->    <!--拉勾UI框架 -->    <!-- analytics js file -->    <!-- plat analytics js file -->    <input type="hidden" id="serverTime" value="1503579917024" />
+
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/vendor_c7a7c93.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_f95e644.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/static_73e9807.js"></script>
+<script type="text/javascript">
+    //login page
+    require(['pc/page/login/main']);
+    
+
+    require(['pc/modules/event/happy-3rd-birthday/main']);
+</script>
+<script src="https://passport.lagou.com/utrack/track.js?version=1.0.0.10&_t=1503579917" type="text/javascript"></script>
+<script type="text/javascript" src="https://passport.lagou.com/upload/oss.js"></script></body>
+
+</html>
+'----------------------------------------------------------------------------------------------------
+'<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta property="qc:admins" content="23635710066417756375" />
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<meta charset="UTF-8">
+
+<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
+
+<meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+
+<title>找工作-互联网招聘求职网-拉勾网</title>
+
+<link rel="Shortcut Icon" href="//static.lagou.com/passport/static/common/static/favicon_faed927.ico">
+
+
+    <!-- header/global_domain FE_base.. -->
+    
+<script type="text/javascript">
+(function() {
+    var protocol = window.location.protocol;
+    var host = window.location.host;
+    var baseUrl = protocol + '//' + host;
+
+    window.GLOBAL_DOMAIN = window.GLOBAL_DOMAIN || {
+        ctx: protocol + '//www.lagou.com',
+        rctx: protocol + '//hr.lagou.com',
+        crctx: protocol + '//hr.lagou.com/company',
+        pctx: protocol + '//passport.lagou.com',
+        actx: protocol + '//account.lagou.com',
+        paictx: protocol + '//pai.lagou.com',
+        sctx: protocol + '//suggest.lagou.com',
+        zctx: protocol + '//yanzhi.lagou.com',
+        proctx: 'https://pro.lagou.com',
+        lgsctx: protocol + '//static.lagou.com',
+        FE_frontLogin: baseUrl + '//www.lagou.com/frontLogin.do',
+        FE_frontLogout: baseUrl + '//www.lagou.com/frontLogout.do',
+        FE_frontRegister: baseUrl + '//www.lagou.com/frontRegister.do'
+    };
+
+    window.GLOBAL_CDN_DOMAIN = 'static.lagou.com';
+})();
+</script>
+
+    <!-- 页面样式 -->    <!-- 动态token，防御伪造请求，重复提交 -->
+    <script type="text/javascript">
+    window.X_Anti_Forge_Token = '98eb74c8-2bd5-4956-8f7d-d645b1c8a483';
+    window.X_Anti_Forge_Code = '62777681';
+</script>
+
+    <!-- H5	 -->
+    <!--[if lt IE 9]>
+  	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_c425276.css" />
+</head>
+
+<body>
+    <input type="hidden" value = "" id = "isVisiable_request_form_verifyCode" />
+    <!-- 页面主体START -->
+    <header class="sso_header">
+        <a href="http://www.lagou.com" class="logo ">
+        </a>
+    </header>
+    <section class="content_box cleafix">
+        <div class="left_area fl">
+            <div class="form_head">
+                <ul class="form_head clearfix">
+                    <li class="active" data-lg-tj-id="1Us0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        密码登录
+                    </li>
+                    <li data-lg-tj-id="1Ut0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        验证码登录
+                    </li>
+                </ul>
+                <span class="tab_active"></span>
+            </div>
+            <div class="form_body" data-view="passwordLogin">
+                <form class="active" action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号/邮箱" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="password" data-controltype="Password">
+                        <input type="password" class="input input_white" id="" name="" placeholder="请输入密码" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item clearfix">
+                        <a rel="nofollow" href="https://passport.lagou.com/accountPwd/toReset.html" class="forgot_pwd">忘记密码？</a>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1j90" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+            <div class="form_body" data-view="codeLogin">
+                <form action="javascript:;">
+                    <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone">
+                        <!--
+	@require "pc/modules/country-code/main.js"
+	@require "pc/modules/country-code/main.less"
+-->
+<span class="area_code"></span>
+<div class="area_code_list">
+    <dl class="code_list_main"></dl>
+    <p class="tips">如果没有找到您的所在归属地，请拨打客服电话4006282835解决。</p>
+</div>
+
+                        <input type="text" class="input input_white" id="" name="" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                    </div>
+                    <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white verify_code_input fl" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                            <img src="" alt="点击重试" class="yzm" width="98" height="40">
+                            <a rel="nofollow" href="javascript:;" class="reflash"></a>
+                        </div>
+                    </div>
+                    <div class="input_item" data-propertyname="phoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <div class="input_group clearfix">
+                            <input type="text" class="input input_white first_child" id="" name="" placeholder="请输入验证码" data-required="required" autocomplete="off">
+                            <input type="button" class="btn btn_active last_child" value="获取验证码" data-required="required" data-lg-tj-id="1UG0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        </div>
+                    </div>
+                    <div class="input_item verify_tips" data-propertyname="autoPhoneVerificationCode" data-controltype="PhoneVerificationCode">
+                        <p class="verify_tips_main">收不到短信？请使用
+                            <input type="button" class="auto_phone" value="语音验证">
+                        </p>
+                        <p class="verify_tips_count_down">语音发送成功</p>
+                    </div>
+                    <div class="input_item btn_group clearfix" data-propertyname="submit" data-controltype="Botton">
+                        <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录" data-lg-tj-id="1Uu0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="divider fl"></div>
+        <div class="right_area fl">
+            <h5>还没有帐号:</h5>
+            <a href="../register/register.html" class="register_now" data-lg-tj-id="1ja0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">立即注册</a>
+            <h5>使用以下帐号直接登录:</h5>
+            <ul class="vender_login clearfix">
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_sinaWeiboProvider.html" title="使用新浪微博帐号登录" class="vender_icon icon_sina" target="_blank" data-lg-tj-id="1jb0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_weixinProvider.html" class="vender_icon icon_wechat" title="使用微信帐号登录" target="_blank" data-lg-tj-id="1jd0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_qqProvider.html" title="使用腾讯QQ帐号登录" class="vender_icon icon_tencent" target="_blank" data-lg-tj-id="1jc0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="/oauth20/auth_baiduProvider.html" title="使用百度帐号登录" class="vender_icon icon_baidu" target="_blank" data-lg-tj-id="2ih0" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 页面主体END -->    <!-- jquery lib -->    <!--拉勾UI框架 -->    <!-- analytics js file -->    <!-- plat analytics js file -->    <input type="hidden" id="serverTime" value="1503579917774" />
+
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/vendor_c7a7c93.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_f95e644.js"></script>
+<script type="text/javascript" src="//static.lagou.com/passport/static/pkg/static_73e9807.js"></script>
+<script type="text/javascript">
+    //login page
+    require(['pc/page/login/main']);
+    
+
+    require(['pc/modules/event/happy-3rd-birthday/main']);
+</script>
+<script src="https://passport.lagou.com/utrack/track.js?version=1.0.0.10&_t=1503579917" type="text/javascript"></script>
+<script type="text/javascript" src="https://passport.lagou.com/upload/oss.js"></script></body>
+
+</html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579918"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579919"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579920"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579921"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579922"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579923"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579924"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579925"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579926"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579927"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579927"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579929"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579929"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579930"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579931"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579932"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
+'<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><script type="text/javascript" src="https://www.lagou.com/utrack/trackMid.js?version=1.0.0.3&t=1503579933"></script><body><input type="hidden" id="KEY" value="rsagIwk3yl2hnrkI98FuQACf9eerWodYa0dPJ"/><script type="text/javascript">kfGNYOsx();</script>页面加载中...<script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body></html>
+'----------------------------------------------------------------------------------------------------
