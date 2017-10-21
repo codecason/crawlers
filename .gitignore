@@ -1,0 +1,7 @@
+*.docx
+*.pyc
+*.html
+log.log
+scrapy_learn
+tutorial/references/*
+
