@@ -2,6 +2,8 @@
 *.pyc
 *.html
 log.log
+*.log
 scrapy_learn
 tutorial/references/*
-
+*.tmp
+*.jl
