@@ -29,7 +29,7 @@ class douban_spider(scrapy.Spider):
 		# with open('log.log', 'w') as f:
 		# 	f.write('wrong ' +  response.body)
 
-		for post in posts:
+		for post in posts[3:5]:
 			metas = {}
 			if len(post.css('.pl')) != 0:
 				continue
