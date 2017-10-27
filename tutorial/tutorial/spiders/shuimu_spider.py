@@ -58,10 +58,6 @@ class ShuiMuSpider(scrapy.Spider):
         self.driver.close()
 
     # TO DELETE
-    def __debug(self, s):
-        print ''
-        print s
-        print ''
 
     def start_requests(self):
         for url in self.start_urls:
@@ -83,13 +79,12 @@ class ShuiMuSpider(scrapy.Spider):
         self.parse(response)
 
     def parse(self, response):
-        # print response.body
         # with open(SHUIMU_DATADIR + '/shuimu_data.jl', 'a+') as f:
         #     # html: gb2312 -> unicode -> utf-8
         #     f.write(response.body.decode('gbk').encode('utf-8'))
         posts = response.css('tbody tr:not(.top)')
         # print 'haha ' * 100, len(posts)
-        for post in posts:
+        for post in posts[:2]:
             # post / td/a
             datas = post.xpath('.//td')
             url = datas[0].xpath('./a/@href').extract_first()
@@ -111,17 +106,20 @@ class ShuiMuSpider(scrapy.Spider):
                 EC.presence_of_element_located((By.CLASS_NAME, 'a-content'))
             )
         except Exception, e:
-            print 'Error', e
-        resposne = HtmlResponse(url=response.url, body=self.driver.page_source, encoding='utf-8')
+            print e
+        resposne = HtmlResponse(url=response.url, body = self.driver.page_source, encoding='utf-8')
+        # username: [.a-u-name]/a/text
+        author = response.css('.a-u-name a::text').extract_first()
         content = ''.join(response.css('.a-content').xpath('node()').extract())
         # TO DO
-        tool = CleanTool()
         # if os.path.exists('./spiders/shuimu_data/') == False:
         #     os.mkdir('./spiders/shuimu_data')
         item = ShuimuItem()
-        for key in metas.keys():
+        keys = ['post_url', 'post_title', 'post_time']
+        for key in keys:
             item[key] = metas[key]
         item['content'] = content.encode('utf-8')
+        item['author'] = author
         yield item
 
         # with open('./spiders/shuimu_data/shuimu_data.jl', 'a+') as f:

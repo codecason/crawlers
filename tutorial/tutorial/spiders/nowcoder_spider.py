@@ -11,7 +11,6 @@ class NowcoderSpider(scrapy.Spider):
         # 'https://www.nowcoder.com/search?query=补招type=post&token='
         'https://www.nowcoder.com/search?query=%E8%A1%A5%E6%8B%9B&type=post&token='
     ]
-    tool = cleanTool.CleanTool()
     baseurl = 'http://www.nowcoder.com'
     header = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)'}
 
@@ -43,7 +42,6 @@ class NowcoderSpider(scrapy.Spider):
 
     def parse_2(self, response):
         content = response.css('.post-topic-des').extract_first()
-        content = self.tool.pureClean(content)
         # generate the item
         metas = response.meta
         item = NowcoderItem()
@@ -51,5 +49,6 @@ class NowcoderSpider(scrapy.Spider):
         item['post_title'] = metas['post_title']
         item['post_url'] = metas['post_url']
         item['post_time'] = metas['post_time']
+        print 'post_time = ', metas['post_time'].encode('gbk', 'ignore')
         item['content'] = content
         yield item

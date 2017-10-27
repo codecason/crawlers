@@ -69,11 +69,15 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
+ITEM_PIPELINES = {
+    'tutorial.pipelines.DoubanPipeline': 345,
+    'tutorial.pipelines.ShuimuPipeline': 334,
+    'tutorial.pipelines.NowcoderPipeline': 333
 #    'tutorial.pipelines.TutorialPipeline': 300,
 #    'tutorial.pipelines.PricePipeline': 300,
-# }
+}
 
+# LOG_LEVEL = 'INFO'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
