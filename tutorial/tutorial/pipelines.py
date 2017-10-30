@@ -8,21 +8,8 @@ import pymongo
 from tutorial.items import *
 from tutorial.utils.cleanTool import CleanTool
 from tutorial.utils.gbkTool import GbkTool
-from tutorial.ft.ft_tool import TimeFilter
+# from tutorial.ft.ft_tool import TimeFilter
 import datetime
-# class PricePipeline(object):
-#     def __init__(self):
-# 	    self.file = open('items.jl', 'wb')
-
-#     def process_item(self, item, spider):
-#     	if 'price' in item:
-#     		if item['price_excludes_vat']:
-#     			item['price'] = item['item'] * self.vat_factor
-#     			line = json.dumps(dict(item)) + "\n"
-#     			self.file.write(line)
-#     		return item
-#     	else:
-#     		raise DropItem('Missing price in %s' % item)
 
 class DoubanPipeline(object):
 

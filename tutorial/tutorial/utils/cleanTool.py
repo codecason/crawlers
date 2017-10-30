@@ -5,7 +5,7 @@ class CleanTool():
     pattern1 = re.compile('<br><br>|<br>')
     # 必须删除script
     pattern2 = re.compile('(<tr>|<td>|<script.*?>.*?</script>)\s*', re.S)
-    pattern3 = re.compile('(<div.*?>|<p>)\s*', re.S)
+    pattern3 = re.compile('(<div.*?>|<p.*?>)\s*', re.S)
     replaceSpan = re.compile('(<span>)|(</span>\s+)', re.S)
     pattern4 = re.compile('(</div>|</p>)\s*', re.S)
     pattern5 = re.compile('\n+')
