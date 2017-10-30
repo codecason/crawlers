@@ -39,5 +39,3 @@ class NowcoderItem(scrapy.Item):
 class ShuimuItem(BaseItem):
     author = Field()
     content = Field()
-
-    pass
