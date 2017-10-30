@@ -7,7 +7,7 @@ class NowcoderSpider(scrapy.Spider):
     name = 'nowcoder'
     start_urls = [
         # 'https://www.nowcoder.com/search?type=post&query=内推'
-        'https://www.nowcoder.com/search?type=post&query=%E5%86%85%E6%8E%A8',
+        'https://www.nowcoder.com/search?type=post&query=%E5%86%85%E6%8E%A8&page={}',
         # 'https://www.nowcoder.com/search?query=补招type=post&token='
         'https://www.nowcoder.com/search?query=%E8%A1%A5%E6%8B%9B&type=post&token='
     ]
@@ -16,7 +16,8 @@ class NowcoderSpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.start_urls:
-            yield scrapy.Request(url, callback=self.parse, headers=self.header)
+            for it in range(1, 3):
+                yield scrapy.Request(url.format(it), callback=self.parse, headers=self.header)
 
     def parse(self, response):
         # all posts .module-box/div.clearfix 有20+1个, 其中最后一个带有module-head, 最好删掉
@@ -28,16 +29,12 @@ class NowcoderSpider(scrapy.Spider):
             title = post.css('.discuss-main').xpath('./a/text()').extract_first().strip()
             # <a class="d-name"> ...</a>今天 12:30<a>...</a> 抽取今天
             author = post.css('p.feed-tip a').xpath('./text()').extract_first().strip()
-            post_time = post.xpath('.//p/text()').extract()[1]
+            # 20xx-xx-xx 发表在 -> 20xx-xx-xx; 20:30:30 -> 
+            post_time = post.xpath('.//p/text()').extract()[1].encode('ascii', 'ignore')
             url = self.baseurl + url
-            # print 'url =', url, 
-            # print 'title =', title
-            # print 'post_time =', repr(post_time)
-            # print 'author =', author
-            # print ''
             item = {}
             item['post_url'] = url; item['post_title'] = title; item['author'] = author
-            item['post_time'] = post_time
+            item['post_time'] = post_time.strip()
             yield scrapy.Request(url, callback=self.parse_2, headers=self.header, meta=item)
 
     def parse_2(self, response):
@@ -49,6 +46,7 @@ class NowcoderSpider(scrapy.Spider):
         item['post_title'] = metas['post_title']
         item['post_url'] = metas['post_url']
         item['post_time'] = metas['post_time']
-        print 'post_time = ', metas['post_time'].encode('gbk', 'ignore')
+        item['content'] = content
+        # print 'post_time = ', metas['post_time'].encode('gbk', 'ignore')
         item['content'] = content
         yield item

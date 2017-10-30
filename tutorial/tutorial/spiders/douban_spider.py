@@ -9,12 +9,12 @@ class douban_spider(scrapy.Spider):
 	name = "douban"
 	# allowed_domains = ["www.douban.com"]
 	start_urls = [
-		'https://www.douban.com/group/299259/'
+		'https://www.douban.com/group/299259/discussion?start=0'
 	]
 	hds=[{'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'},\
 	{'User-Agent':'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11'},\
 	{'User-Agent': 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)'}]
-	ct = 0
+
 	def start_requests(self):
 		for url in self.start_urls:
 			yield scrapy.Request(url, callback=self.parse, headers=self.hds[0])

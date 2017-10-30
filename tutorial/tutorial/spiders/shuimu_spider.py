@@ -89,7 +89,7 @@ class ShuiMuSpider(scrapy.Spider):
             datas = post.xpath('.//td')
             url = datas[0].xpath('./a/@href').extract_first()
             title = datas[1].xpath('./a/text()').extract_first()
-            post_time = datas[2].xpath('./text()').extract_first().replace('&emsp;', '')
+            post_time = datas[2].xpath('./text()').extract_first().replace('&emsp;', '').strip()
             # print 'post_time =', post_time.encode('gbk', 'ignore')
             # post_time = datas[2].xpath('./td/text()').re('([0-9]{2}:){2}[0-9]{2}')
             metas = {"post_url": url, "post_title" : title, "post_time": post_time}
