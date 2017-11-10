@@ -8,7 +8,6 @@ import pymongo
 from tutorial.items import *
 from tutorial.utils.cleanTool import CleanTool
 from tutorial.utils.gbkTool import GbkTool
-# from tutorial.ft.ft_tool import TimeFilter
 import datetime
 
 class DoubanPipeline(object):
@@ -23,7 +22,6 @@ class DoubanPipeline(object):
 				self.douban_post = self.db['douban']
 			except Exception, e:
 				print e
-			# self.douban_post.createIndex({"url_id":1}, {"unique":True})
 
 	def process_item(self, item, spider):
 		if isinstance(item, DoubanPostItem):
@@ -147,7 +145,7 @@ class NowcoderPipeline(object):
 			item['post_time'] = datetime.datetime.strptime(post_time, '%Y-%m-%d')
 			self.saveOrUpdate(self.post, item)
 			# print 'content = ', item['content'].encode('gbk', 'ignore')[:100]
-			print 'post_time = ', item['post_time'].encode('gbk', 'ignore')
+			# print 'post_time = ', item['post_time'].encode('gbk', 'ignore')
 		return item
 
 	def saveOrUpdate(self, collection, item):

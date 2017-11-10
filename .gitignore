@@ -4,6 +4,6 @@
 log.log
 *.log
 scrapy_learn
-tutorial/references/*
+rss/references/*
 *.tmp
 *.jl
